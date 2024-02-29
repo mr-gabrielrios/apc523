@@ -73,6 +73,7 @@ if __name__ == "__main__":
 
     ax.plot([k for k in errors.keys()], [v for v in errors.values()], marker='o', lw=2, c='b')
     ax.set_xscale('log')
+    ax.set_yscale('log')
      
     ax.set_xlim([min([k for k in errors.keys()]), max([k for k in errors.keys()])])
     ax.set_xlim(ax.get_xlim()[::-1])
